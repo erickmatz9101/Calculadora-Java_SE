@@ -1,9 +1,11 @@
+import java.util.Scanner;
+
 public class Calculadora { //este es el molde del obteto, todos los objetos calculadora tendran estos atributos y metodos
     float variableA;
     float variableB;
     float resultado;
 
-    //Creando el método constructor aqui es donde contruimos el objeto y le damos vida a las variables o estado inicial a las variables//
+    //Creando el método constructor aqui es donde contruimos el objeto y le damos vida a las variables o inicializarlas (instanciarlas)//
 
     public Calculadora(float a,float b, float r){
         this.variableA=a;
@@ -54,6 +56,17 @@ public class Calculadora { //este es el molde del obteto, todos los objetos calc
 
         }
 
+
+
+    }
+
+    public void entradaDatos(){
+        Scanner sc= new Scanner(System.in); //Este objeto permite la entrada de datos del usuario
+        System.out.println("Digita el primer dato");
+        variableA = Integer.valueOf(sc.nextLine()); //se utiliza para que guarde la entrada de datos del usuario ár avriabes A y B
+
+        System.out.println("Digita el segundo dato");
+        variableB = Integer.valueOf(sc.nextLine());
 
 
     }
